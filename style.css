@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #1b2828;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 75px;
+  display: flex;
+}
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.menu li {
+  margin-left: 20px;
+}
+.menu li a {
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+.menu li a:hover {
+  color: #ccc;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+.search form {
+  display: flex;
+  margin: 0;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 40px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #fff;
+}
+.search form:hover {
+  border: 1px solid #047379;
+}
+.search input {
+  border: none;
+  width: 200px;
+}
+.search input:focus {
+  outline: none;
+}
+.search input::placeholder {
+  color: #047379;
+}
+.search span {
+  color: #047379;
+  align-self: center;
+}
+.search button {
+  background-color: #047379;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 10px;
+}
+.search button:hover {
+  background-color: #fff;
+  color: #047379;
+  border: 1px solid;
+}
+.homepage,
+.about-page {
+  background-image: linear-gradient(
+      to right,
+      rgba(4, 115, 119, 1),
+      rgba(255, 0, 0, 0)
+    ),
+    url("./home_backgroung.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+}
+.homepage h1,
+.about-page h1 {
+  font-size: 46px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.homepage p,
+.about-page p {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.homepage button {
+  background-color: #047379;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+.homepage button:hover {
+  background-color: #fff;
+  color: #047379;
+  border: 1px solid #047379;
+  cursor: pointer;
+}
+.content {
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.homepage ul,
+.about-page ul {
+  padding-top: 100px;
+}
+.homepage ul li a,
+.about-page ul li a {
+  width: 100px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.homepage .line,
+.about-page .line {
+  width: 1px;
+  height: 200px;
+  background-color: #fff;
+  margin-left: 28px;
+  margin-bottom: 40px;
+}
+.homepage ul li a:hover,
+.about-page ul li a:hover {
+  color: #1b2828;
+  cursor: pointer;
+}
+.about-page .about {
+  width: 80%;
+  margin-left: 50px;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.about-page h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+.about-page .about p {
+  padding: 10px 15px;
+  line-height: 1.5;
+  background-color: rgba(27, 40, 40, 0.5);
+  border-radius: 5px;
+}
+.about-page .team {
+  display: block;
+}
