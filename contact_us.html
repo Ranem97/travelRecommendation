@@ -25,16 +25,8 @@
         <li><a href="./about.html">About</a></li>
         <li><a href="./contact_us.html">Contact us</a></li>
       </ul>
-      <div class="search">
-        <form>
-          <input type="text" placeholder="Enter a destination or a keyword" />
-          <span class="material-symbols-outlined">search</span>
-          <button type="submit" id="btnSearch">Search</button>
-          <button id="btnClear">Clear</button>
-        </form>
-      </div>
     </nav>
-    <div class="homepage">
+    <div class="contact-page">
       <ul>
         <li><div class="line"></div></li>
         <li>
@@ -50,16 +42,48 @@
           <a class="fa fa-youtube-play fa-2x"></a>
         </li>
       </ul>
-      <div class="content">
-        <h1>EXPLORE DREAM DESTINATION</h1>
-        <p>
-          It encourages exploration of unfamiliar territories, embracing diverse
-          cultures and landscapes, while pursuing the desired destination
-          thatcaptivates the heart and ignites a sense of wonder.
-        </p>
-        <button>BOOK NOW</button>
+
+      <div class="contact-us">
+        <span>
+          <h1>CONTACT US</h1>
+          <p>Get in Touch</p>
+        </span>
+        <div class="form">
+          <form id="contactForm">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your Name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Enter your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
-    <script src="./travel_recommendation.js"></script>
   </body>
 </html>

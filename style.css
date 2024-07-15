@@ -97,15 +97,16 @@ nav .logo img {
   border: 1px solid;
 }
 .homepage,
-.about-page {
+.about-page,
+.contact-page {
   background-image: linear-gradient(
       to right,
       rgba(4, 115, 119, 1),
       rgba(255, 0, 0, 0)
     ),
-    url("./home_backgroung.jpg");
+    url("./images/home_backgroung.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   height: 100vh;
   display: flex;
 }
@@ -146,18 +147,21 @@ nav .logo img {
   justify-content: center;
 }
 .homepage ul,
-.about-page ul {
+.about-page ul,
+.contact-page ul {
   padding-top: 100px;
 }
 .homepage ul li a,
-.about-page ul li a {
+.about-page ul li a,
+.contact-page ul li a {
   width: 100px;
   color: #fff;
   margin-bottom: 20px;
   margin-left: 15px;
 }
 .homepage .line,
-.about-page .line {
+.about-page .line,
+.contact-page .line {
   width: 1px;
   height: 200px;
   background-color: #fff;
@@ -165,13 +169,14 @@ nav .logo img {
   margin-bottom: 40px;
 }
 .homepage ul li a:hover,
-.about-page ul li a:hover {
+.about-page ul li a:hover,
+.contact-page ul li a:hover {
   color: #1b2828;
   cursor: pointer;
 }
 .about-page .about {
   width: 80%;
-  margin-left: 50px;
+
   margin-top: -100px;
   display: flex;
   flex-direction: column;
@@ -182,12 +187,93 @@ nav .logo img {
   font-size: 64px;
   margin-bottom: 20px;
 }
-.about-page .about p {
+.about-page .about p,
+.card,
+.form {
   padding: 10px 15px;
   line-height: 1.5;
   background-color: rgba(27, 40, 40, 0.5);
   border-radius: 5px;
 }
 .about-page .team {
+  display: flex;
+}
+.about-page .contents {
+  margin-left: 50px;
+  margin-top: 200px;
+}
+.about-page .contents .team h2 {
+  font-size: 48px;
+  color: #fff;
+}
+.card {
+  display: flex;
+  margin: 10px;
+}
+.card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.card h3 {
+  color: #fff;
+}
+.card p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+.card button {
+  background-color: #274385;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-us {
+  align-items: center;
+}
+
+.contact-page .contact-us {
+  margin-top: 200px;
+  color: #fff;
+  display: flex;
+}
+.contact-page .contact-us h1 {
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+.form {
   display: block;
+  width: 650px;
+  margin-left: 40px;
+  margin-bottom: 100px;
+}
+.form label {
+  display: block;
+  width: 100px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 600px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form button {
+  color: #fff;
+  background-color: #047379;
+  text-align: center;
+  width: 600px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
 }
