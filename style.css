@@ -52,7 +52,7 @@ nav .logo img {
   align-items: center;
   margin-right: 0;
 }
-.search form {
+.search #form {
   display: flex;
   margin: 0;
   padding: 10px 15px;
@@ -63,7 +63,7 @@ nav .logo img {
   font-size: 16px;
   background-color: #fff;
 }
-.search form:hover {
+.search #form:hover {
   border: 1px solid #047379;
 }
 .search input {
@@ -72,6 +72,7 @@ nav .logo img {
 }
 .search input:focus {
   outline: none;
+  background-color: #fff;
 }
 .search input::placeholder {
   color: #047379;
@@ -80,7 +81,8 @@ nav .logo img {
   color: #047379;
   align-self: center;
 }
-.search button {
+.search button,
+#result-card .result-item button {
   background-color: #047379;
   color: #fff;
   padding: 10px;
@@ -276,4 +278,27 @@ nav .logo img {
   border: none;
   border-radius: 5px;
   padding: 10px;
+}
+#result-card {
+  position: absolute;
+  right: 40px;
+  top: 100px;
+  width: 500px;
+}
+#result-card .result-item {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#result-card .result-item img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+#result-card .result-item h3,
+#result-card .result-item p {
+  padding: 10px;
+}
+#result-card .result-item button {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }

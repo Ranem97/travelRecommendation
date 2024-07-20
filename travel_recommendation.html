@@ -26,14 +26,20 @@
         <li><a href="./contact_us.html">Contact us</a></li>
       </ul>
       <div class="search">
-        <form>
-          <input type="text" placeholder="Enter a destination or a keyword" />
+        <div id="form">
+          <input
+            type="text"
+            placeholder="Enter a destination or a keyword"
+            id="destinationKeyword"
+          />
           <span class="material-symbols-outlined">search</span>
-          <button type="submit" id="btnSearch">Search</button>
+          <button id="btnSearch">Search</button>
           <button id="btnClear">Clear</button>
-        </form>
+        </div>
       </div>
     </nav>
+    <div id="result-card"></div>
+
     <div class="homepage">
       <ul>
         <li><div class="line"></div></li>
